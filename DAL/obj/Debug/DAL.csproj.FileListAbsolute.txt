@@ -1,0 +1,9 @@
+C:\Users\Cristian\workspace\rootacademy\DAL\bin\Debug\DAL.dll
+C:\Users\Cristian\workspace\rootacademy\DAL\bin\Debug\DAL.pdb
+C:\Users\Cristian\workspace\rootacademy\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Cristian\workspace\rootacademy\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Cristian\workspace\rootacademy\DAL\obj\Debug\DAL.dll
+C:\Users\Cristian\workspace\rootacademy\DAL\obj\Debug\DAL.pdb
+C:\Users\Cristian\workspace\rootacademy\DAL\bin\Debug\BE.dll
+C:\Users\Cristian\workspace\rootacademy\DAL\bin\Debug\BE.pdb
+C:\Users\Cristian\workspace\rootacademy\DAL\obj\Debug\DAL.csproj.CopyComplete
