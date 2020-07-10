@@ -12,6 +12,7 @@ namespace BLL
         string[] listaTablasIntegridad =
          {
                "Usuario",
+               "Persona",
             };
 
         /// <summary>
@@ -42,6 +43,18 @@ namespace BLL
                     lanzarErrorDeVerificacion();
                 }
             }
+            BLLPersona bllPersona = new BLLPersona();
+            foreach (Persona persona in bllPersona.conseguirTodos())
+            {
+                int calculado = bllPersona.calcularDVH(persona);
+                if (calculado != persona.Dvh)
+                {
+                    Console.WriteLine(persona.Nombre);
+                    new BLLBitacora().crearNuevaBitacora("Calculo de DVVH", "Se detecto un error de calculo de DVH para la entidad Persona con ID: " + persona.Id, Criticidad.Alta);
+                    lanzarErrorDeVerificacion();
+                }
+            }
+
             return true;
         }
 

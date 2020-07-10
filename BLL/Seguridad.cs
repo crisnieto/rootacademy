@@ -58,23 +58,5 @@ namespace BLL
                 return false;
             }
         }
-
-        /// <summary>
-        /// Se encarga de verificar si el usuario se encuentra bloqueado.
-        /// Cuando el usuario tiene 3 intentos, se lo considera bloqueado.
-        /// </summary>
-        /// <param name="usuario"></param>
-        /// <returns></returns>
-        public bool esBloqueado(Usuario usuario)
-        {
-            if (usuario.Intentos >= 3)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
     }
 }

@@ -12,7 +12,6 @@ namespace BE
         int _dvh;
         string _password;
         string _username;
-        int _intentos;
         bool _eliminado;
         List<Rol> roles;
 
@@ -21,7 +20,6 @@ namespace BE
         public int Dvh { get => _dvh; set => _dvh = value; }
         public string Password { get => _password; set => _password = value; }
         public string Username { get => _username; set => _username = value; }
-        public int Intentos { get => _intentos; set => _intentos = value; }
         public bool Eliminado { get => _eliminado; set => _eliminado = value; }
         public List<Rol> Roles { get => roles; set => roles = value; }
 

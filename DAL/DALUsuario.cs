@@ -37,8 +37,6 @@ namespace DAL
 
             usuarioConseguido.Dvh = Convert.ToInt32(usuarioDS["DVH"]);
 
-            usuarioConseguido.Intentos = Convert.ToInt32(usuarioDS["intentos"]);
-
             usuarioConseguido.Eliminado = Convert.ToBoolean(usuarioDS["eliminado"]);
 
             return usuarioConseguido;
@@ -63,7 +61,7 @@ namespace DAL
 
         public List<Usuario> conseguirTodos()
         {
-            string textoComando = "SELECT usuarioiD, username, password, intentos, DVH, eliminado FROM USUARIO where eliminado = 0";
+            string textoComando = "SELECT usuarioiD, username, password, DVH, eliminado FROM USUARIO where eliminado = 0";
 
             DataTable usuarioDt = sqlHelper.ejecutarDataAdapter(textoComando).Tables[0];
             List<Usuario> listaUsuarios = new List<Usuario>();
@@ -75,7 +73,6 @@ namespace DAL
                 usuarioConseguido.Username = Convert.ToString(dr["username"]);
                 usuarioConseguido.Password = Convert.ToString(dr["password"]);
                 usuarioConseguido.Dvh = Convert.ToInt32(dr["DVH"]);
-                usuarioConseguido.Intentos = Convert.ToInt32(dr["intentos"]);
                 usuarioConseguido.Eliminado = Convert.ToBoolean(dr["eliminado"]);
                 listaUsuarios.Add(usuarioConseguido);
             }
@@ -84,7 +81,7 @@ namespace DAL
 
         public List<Usuario> conseguirTodosValidacion()
         {
-            string textoComando = "SELECT usuarioiD, username, password, intentos, DVH, eliminado FROM USUARIO";
+            string textoComando = "SELECT usuarioiD, username, password, DVH, eliminado FROM USUARIO";
 
             DataTable usuarioDt = sqlHelper.ejecutarDataAdapter(textoComando).Tables[0];
             List<Usuario> listaUsuarios = new List<Usuario>();
@@ -96,78 +93,10 @@ namespace DAL
                 usuarioConseguido.Username = Convert.ToString(dr["username"]);
                 usuarioConseguido.Password = Convert.ToString(dr["password"]);
                 usuarioConseguido.Dvh = Convert.ToInt32(dr["DVH"]);
-                usuarioConseguido.Intentos = Convert.ToInt32(dr["intentos"]);
                 usuarioConseguido.Eliminado = Convert.ToBoolean(dr["eliminado"]);
                 listaUsuarios.Add(usuarioConseguido);
             }
             return listaUsuarios;
-        }
-
-
-        public int eliminar(Usuario usuario)
-        {
-            string textoComando = "update USUARIO set eliminado = @ELIMINADO, DVH = @DVH where usuarioID = @USUARIOID";
-            List<SqlParameter> lista = new List<SqlParameter>();
-            lista.Add(new SqlParameter("@ELIMINADO", usuario.Eliminado));
-            lista.Add(new SqlParameter("@DVH", usuario.Dvh));
-            lista.Add(new SqlParameter("@USUARIOID", usuario.Id));
-            return sqlHelper.ejecutarNonQuery(textoComando, lista);
-        }
-
-        public int ingresar(Usuario usuario)
-        {
-            string textoComando = "insert into USUARIO (username, password, DVH) values (@USERNAME, @PASSWORD, @DVH)";
-            List<SqlParameter> lista = new List<SqlParameter>();
-            lista.Add(new SqlParameter("@PASSWORD", usuario.Password));
-            lista.Add(new SqlParameter("@USERNAME", usuario.Username));
-            lista.Add(new SqlParameter("@DVH", usuario.Dvh));
-            return sqlHelper.ejecutarNonQuery(textoComando, lista);
-
-        }
-
-        public int actualizarContraseña(Usuario usuario)
-        {
-            string textoComando = "UPDATE Usuario set password = @PASSWORD, dvh = @DVH WHERE UsuarioID = @USUARIOID;";
-            List<SqlParameter> lista = new List<SqlParameter>();
-            lista.Add(new SqlParameter("@PASSWORD", usuario.Password));
-            lista.Add(new SqlParameter("@DVH", usuario.Dvh));
-            lista.Add(new SqlParameter("@USUARIOID", usuario.Id));
-
-            return sqlHelper.ejecutarNonQuery(textoComando, lista);
-        }
-
-        public bool guardar(Usuario usuario)
-        {
-            string textoComando = "INSERT INTO Usuario (username, password, DVH) values @USER, @PASSWORD, @DVH;";
-
-            List<SqlParameter> lista = new List<SqlParameter>();
-            lista.Add(new SqlParameter("@USER", usuario.Username));
-            lista.Add(new SqlParameter("@PASSWORD", usuario.Password));
-            lista.Add(new SqlParameter("@DVH", usuario.Dvh));
-
-            return Convert.ToBoolean(sqlHelper.ejecutarNonQuery(textoComando, lista));
-
-        }
-
-        public bool agregarIntento(Usuario usuario)
-        {
-            string textoComando = "UPDATE Usuario SET intentos = @INTENTOS, DVH = @DVH where username = @USER";
-            List<SqlParameter> lista = new List<SqlParameter>();
-            lista.Add(new SqlParameter("@USER", usuario.Username));
-            lista.Add(new SqlParameter("@DVH", usuario.Dvh));
-            lista.Add(new SqlParameter("@INTENTOS", usuario.Intentos));
-            return Convert.ToBoolean(sqlHelper.ejecutarNonQuery(textoComando, lista));
-        }
-
-        public bool desbloquear(Usuario usuario)
-        {
-            string textoComando = "UPDATE Usuario SET intentos = @INTENTOS, DVH = @DVH where username = @USER";
-            List<SqlParameter> lista = new List<SqlParameter>();
-            lista.Add(new SqlParameter("@USER", usuario.Username));
-            lista.Add(new SqlParameter("@INTENTOS", usuario.Intentos));
-            lista.Add(new SqlParameter("@DVH", usuario.Dvh));
-
-            return Convert.ToBoolean(sqlHelper.ejecutarNonQuery(textoComando, lista));
         }
     }
 

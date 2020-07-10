@@ -41,9 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLLBase.cs" />
     <Compile Include="BLLBitacora.cs" />
-    <Compile Include="BLLFamilia.cs" />
+    <Compile Include="BLLPersona.cs" />
     <Compile Include="BLLRol.cs" />
     <Compile Include="BLLUsuario.cs" />
     <Compile Include="DVVH.cs" />

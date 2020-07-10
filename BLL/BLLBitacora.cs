@@ -114,9 +114,11 @@ namespace BLL
         /// <returns></returns>
         public List<Bitacora> conseguirBitacorasSinUsuario(IIdentity user ,DateTime fechaInicio, DateTime fechaFin, string criticidad = null)
         {
+            Sesion.Instancia().verificarPermiso(user, "OP45");
+            
+
             try
             {  
-                Sesion.Instancia().verificarPermiso(user, "OP45");
                 DALBitacora dalBitacora = new DALBitacora();
                 return dalBitacora.conseguirBitacorasSinUsuario(fechaInicio, fechaFin, criticidad);
 

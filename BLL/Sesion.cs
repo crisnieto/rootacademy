@@ -61,15 +61,14 @@ namespace BLL
         {
             if (!user.IsAuthenticated)
             {
-                throw new Exception("No autenticado");
+                throw new ForbiddenException();
             }
 
             Usuario usuario = conseguirUsuarioEnSesion(user);
 
             if (!validar(usuario ,codigo))
             {
-                string mensaje = RootAcademyMessage.formatearMensaje("No posee los permisos necesarios") + ": " + codigo;
-                throw new Exception(mensaje);
+                throw new ForbiddenException();
             }
         }
 

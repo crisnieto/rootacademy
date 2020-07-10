@@ -44,6 +44,8 @@
     <Compile Include="Bitacora.cs" />
     <Compile Include="Criticidad.cs" />
     <Compile Include="Familia.cs" />
+    <Compile Include="ForbiddenException.cs" />
+    <Compile Include="Persona.cs" />
     <Compile Include="RootAcademyMessage.cs" />
     <Compile Include="Permiso.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

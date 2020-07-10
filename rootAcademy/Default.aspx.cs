@@ -16,14 +16,20 @@ namespace rootAcademy
                 UsuarioLogueado.Visible = true;
                 Logueate.Visible = false;
                 LogoutLabel.Visible = true;
-                Label1.Text = "Bienvenido " + User.Identity.Name;
+                LabelBienvenido.Text = "Bienvenido " + User.Identity.Name;
+                LabelBienvenidoMobile.Text = "Bienvenido " + User.Identity.Name;
+                LoginLabelMobile.Visible = false;
+                LogoutLabelMobile.Visible = true;
             }
             else
             {
                 UsuarioLogueado.Visible = false;
                 Logueate.Visible = true;
                 LogoutLabel.Visible = false;
-                Label1.Visible = false;
+                LabelBienvenido.Visible = false;
+                LabelBienvenidoMobile.Visible = false;
+                LoginLabelMobile.Visible = true;
+                LogoutLabelMobile.Visible = false;
             }
         }
     }

@@ -6,6 +6,7 @@ using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using BE;
 
 namespace rootAcademy
 {
@@ -19,9 +20,18 @@ namespace rootAcademy
         private void loadBitacora()
         {
             BLLBitacora bLLBitacora = new BLLBitacora();
-            List<BE.Bitacora> bitacoras = bLLBitacora.conseguirBitacorasSinUsuario(User.Identity ,new DateTime(2008, 01, 01), DateTime.Today.AddDays(1));
-            GridView1.DataSource = bitacoras;
-            GridView1.DataBind();
+            try
+            {
+                List<BE.Bitacora> bitacoras = bLLBitacora.conseguirBitacorasSinUsuario(User.Identity, new DateTime(2008, 01, 01), DateTime.Today.AddDays(1));
+                GridView1.DataSource = bitacoras;
+                GridView1.DataBind();
+            }
+            catch (ForbiddenException ex)
+            {
+                Response.Redirect("Forbidden.aspx");
+            }
+
+   
         }
     }
 }

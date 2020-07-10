@@ -31,13 +31,13 @@ namespace rootAcademy {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl UsuarioLogueado;
         
         /// <summary>
-        /// Label1 control.
+        /// LabelBienvenido control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label LabelBienvenido;
         
         /// <summary>
         /// Logueate control.
@@ -47,5 +47,32 @@ namespace rootAcademy {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Logueate;
+        
+        /// <summary>
+        /// LabelBienvenidoMobile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelBienvenidoMobile;
+        
+        /// <summary>
+        /// LogoutLabelMobile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl LogoutLabelMobile;
+        
+        /// <summary>
+        /// LoginLabelMobile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl LoginLabelMobile;
     }
 }

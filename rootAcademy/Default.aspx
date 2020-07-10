@@ -46,7 +46,7 @@
 		</div>
 		<div class="header_side d-flex flex-row justify-content-center align-items-center" id="UsuarioLogueado" runat="server">
 			<img src="images/user-32.png" alt="">
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="LabelBienvenido" runat="server" Text="Label"></asp:Label>
 		</div>
         <div class="header_side d-flex flex-row justify-content-center align-items-center" id="Logueate" runat="server">
             <img src="images/user-32.png" alt="">
@@ -72,10 +72,13 @@
 		<!-- Menu Items -->
 		<div class="menu_inner menu_mm">
 			<div class="menu menu_mm">
+                <asp:Label ID="LabelBienvenidoMobile" runat="server" Text="Label"></asp:Label>
 				<ul class="menu_list menu_mm">
-					<li class="menu_item menu_mm"><a href="#">Home</a></li>
-					<li class="menu_item menu_mm"><a href="#">About us</a></li>
-					<li class="menu_item menu_mm"><a href="Login.aspx">Login</a></li>
+						<li class="main_nav_item"><a href="#">Inicio</a></li>
+                        <li class="main_nav_item"><a href="#">Cursos</a></li>
+                        <li class="main_nav_item"><a href="#">Contacto</a></li>
+                        <li class="main_nav_item" ID="LogoutLabelMobile" runat="server"><a href="Logout.aspx">Logout</a></li>
+                        <li class="main_nav_item" ID="LoginLabelMobile" runat="server"><a href="Login.aspx" runat="server">Login</a></li>
 				</ul>
 
 				<!-- Menu Social -->

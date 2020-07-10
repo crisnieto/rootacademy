@@ -36,14 +36,7 @@ namespace DAL
 
             Console.WriteLine(System.AppContext.BaseDirectory);
             string textFile = System.AppContext.BaseDirectory + "test.txt";
-            if (File.Exists(textFile))
-            {
-                return new SqlConnection("Server= aa1trsuhl4pggv.c2i18kjo57hc.us-east-2.rds.amazonaws.com, 1433; Database = rootacademy; User Id = rootacademysuper; Password = UAI2020rootAcademy!");
-            }
-            else
-            {
-                return new SqlConnection("Server= aa1trsuhl4pggv.c2i18kjo57hc.us-east-2.rds.amazonaws.com, 1433; Database = rootacademy; User Id = rootacademysuper; Password = UAI2020rootAcademy!");
-            }
+            return new SqlConnection("Server= aa1trsuhl4pggv.c2i18kjo57hc.us-east-2.rds.amazonaws.com, 1433; Database = rootacademy; User Id = rootacademysuper; Password = UAI2020rootAcademy!");
         }
 
         private int ejecutarComando(SqlCommand comando)

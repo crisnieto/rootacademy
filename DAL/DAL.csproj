@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DALBitacora.cs" />
+    <Compile Include="DALPersona.cs" />
     <Compile Include="DALRol.cs" />
     <Compile Include="DALUsuario.cs" />
     <Compile Include="DVVH.cs" />

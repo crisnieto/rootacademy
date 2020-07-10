@@ -32,11 +32,12 @@ namespace rootAcademy
             catch (Exception ex)
             {
                 ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('" + ex.Message + "');", true);
+                return;
             }
 
             try
             {
-                Usuario usuarioRecibido = new BLLUsuario().GetUsuario(username.Text, password.Text);
+                Usuario usuarioRecibido = new BLLUsuario().construirUsuarioRecibido(username.Text, password.Text);
 
                 Usuario usuarioLogin = new BLLUsuario().conseguirUsuarioLogIn(usuarioRecibido);
 
