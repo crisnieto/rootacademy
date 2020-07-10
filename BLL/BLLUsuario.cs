@@ -23,7 +23,7 @@ namespace BLL
 
         /// <summary>
         /// calcularDVH se encarga de calcular el digito verificador horizontal en base a una entidad Usuario.
-        /// Para el calculo de DVH se realiza una concatenacion de los atributos del nutricionista, a su vez convirtiendo cada atributo que no sea string a tipo string
+        /// Para el calculo de DVH se realiza una concatenacion de los atributos del Usuario, a su vez convirtiendo cada atributo que no sea string a tipo string
         /// Una vez realizada la concatenacion, es responsabilidad de la entidad Seguridad en retornar la encriptacion de dicha concatenacion.
         /// Una vez hecho eso, y obtenido el String de la concatenacion, por cada caracter, se obtiene el codigo ASCII que lo representa (int)
         /// y se suma cada codigo ASCII. El resultado es el Digito Verificador Horizontal

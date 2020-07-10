@@ -21,16 +21,6 @@ namespace BLL
             bllBitacora = new BLLBitacora();
         }
 
-        /// <summary>
-        /// conseguir se encarga de solicitar a la DAL la obtencion de un Persona en particular de la base de datos.
-        /// </summary>
-        /// <param name="idUsuario"></param>
-        /// <returns></returns>
-        public Persona conseguir(int idUsuario)
-        {
-            return dalPersona.conseguir(idUsuario);
-        }
-
 
         /// <summary>
         /// conseguirTodos solicita a la DAL que retorne la lista de toods los Personas que existen en la base de datos.

@@ -1,5 +1,4 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="rootAcademy.Default" %>
-<!DOCTYPE html>
 
 <!DOCTYPE html>
 <html lang="en">

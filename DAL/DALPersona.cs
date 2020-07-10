@@ -44,7 +44,7 @@ namespace DAL
 
         public Persona conseguir(int id)
         {
-            string textoComando = "select dni, nutricionistaID, apellido, usuarioID, nombre, sexo, DVH from PERSONA " +
+            string textoComando = "select dni, personaID, apellido, usuarioID, nombre, sexo, DVH from PERSONA " +
                 "where usuarioID = @IDUSUARIO;";
 
             List<SqlParameter> lista = new List<SqlParameter>();
@@ -55,7 +55,7 @@ namespace DAL
             Persona persona = new Persona();
             persona.Nombre = (string)dr["nombre"];
             persona.Apellido = (string)dr["apellido"];
-            persona.Id = (int)dr["nutricionistaID"];
+            persona.Id = (int)dr["personaID"];
             persona.Usuario.Id = (int)dr["usuarioId"];
             persona.Dni = (int)dr["dni"];
             persona.Sexo = (string)dr["sexo"];

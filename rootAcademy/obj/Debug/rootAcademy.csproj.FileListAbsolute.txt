@@ -1,5 +1,3 @@
-C:\Users\Cristian\workspace\rootacademy\rootAcademy\obj\Debug\rootAcademy.csprojAssemblyReference.cache
-C:\Users\Cristian\workspace\rootacademy\rootAcademy\obj\Debug\rootAcademy.csproj.CoreCompileInputs.cache
 C:\Users\Cristian\workspace\rootacademy\rootAcademy\bin\rootAcademy.dll.config
 C:\Users\Cristian\workspace\rootacademy\rootAcademy\bin\rootAcademy.dll
 C:\Users\Cristian\workspace\rootacademy\rootAcademy\bin\rootAcademy.pdb
@@ -76,6 +74,8 @@ C:\Users\Cristian\workspace\rootacademy\rootAcademy\bin\System.Diagnostics.Diagn
 C:\Users\Cristian\workspace\rootacademy\rootAcademy\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Users\Cristian\workspace\rootacademy\rootAcademy\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Cristian\workspace\rootacademy\rootAcademy\bin\DAL.pdb
+C:\Users\Cristian\workspace\rootacademy\rootAcademy\obj\Debug\rootAcademy.csprojAssemblyReference.cache
+C:\Users\Cristian\workspace\rootacademy\rootAcademy\obj\Debug\rootAcademy.csproj.CoreCompileInputs.cache
 C:\Users\Cristian\workspace\rootacademy\rootAcademy\obj\Debug\rootAcademy.csproj.CopyComplete
 C:\Users\Cristian\workspace\rootacademy\rootAcademy\obj\Debug\rootAcademy.dll
 C:\Users\Cristian\workspace\rootacademy\rootAcademy\obj\Debug\rootAcademy.pdb

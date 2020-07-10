@@ -267,12 +267,13 @@
     <Content Include="styles\courses_styles.css" />
     <Content Include="styles\elements_responsive.css" />
     <Content Include="styles\elements_styles.css" />
-    <Content Include="styles\forbidden_custom_style.html" />
+    <Content Include="styles\ForbiddenCustomStyle.css" />
     <Content Include="styles\main_styles.css" />
     <Content Include="styles\news_post_responsive.css" />
     <Content Include="styles\news_post_styles.css" />
     <Content Include="styles\news_responsive.css" />
     <Content Include="styles\news_styles.css" />
+    <Content Include="styles\NotFoundCustomStyle.css" />
     <Content Include="styles\responsive.css" />
     <Content Include="styles\teachers_responsive.css" />
     <Content Include="styles\teachers_styles.css" />

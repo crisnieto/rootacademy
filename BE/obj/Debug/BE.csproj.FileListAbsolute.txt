@@ -1,6 +1,5 @@
 C:\Users\Cristian\workspace\rootacademy\BE\bin\Debug\BE.dll
 C:\Users\Cristian\workspace\rootacademy\BE\bin\Debug\BE.pdb
-C:\Users\Cristian\workspace\rootacademy\BE\obj\Debug\BE.csprojAssemblyReference.cache
 C:\Users\Cristian\workspace\rootacademy\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
 C:\Users\Cristian\workspace\rootacademy\BE\obj\Debug\BE.dll
 C:\Users\Cristian\workspace\rootacademy\BE\obj\Debug\BE.pdb

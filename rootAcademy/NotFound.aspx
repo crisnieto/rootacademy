@@ -1,7 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="NotFound.aspx.cs" Inherits="rootAcademy.NotFound" %>
-
-<link rel="stylesheet" type="text/css" href="styles/notfound_custom_styles.css">
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NotFound</title>
+    <link rel="stylesheet" type="text/css" href="styles/NotFoundCustomStyle.css">
+</head>
 
  <div id="clouds">
             <div class="cloud x1"></div>
@@ -19,3 +22,4 @@
             <a class='btn' href='Default.aspx'>VOLVER AL INICIO</a>
         </div>
 </div>
+</html>
