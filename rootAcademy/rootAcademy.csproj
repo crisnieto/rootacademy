@@ -112,7 +112,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="Contact.aspx" />
+    <Content Include="Bitacora.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -131,8 +131,102 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="images\user-32.png" />
+    <Content Include="Logout.aspx" />
+    <Content Include="plugins\fontawesome-free-5.0.1\webfonts\fa-brands-400.eot" />
+    <Content Include="plugins\fontawesome-free-5.0.1\webfonts\fa-brands-400.ttf" />
+    <Content Include="plugins\fontawesome-free-5.0.1\webfonts\fa-brands-400.woff" />
+    <Content Include="plugins\fontawesome-free-5.0.1\webfonts\fa-brands-400.woff2" />
+    <Content Include="plugins\fontawesome-free-5.0.1\webfonts\fa-regular-400.eot" />
+    <Content Include="plugins\fontawesome-free-5.0.1\webfonts\fa-regular-400.ttf" />
+    <Content Include="plugins\fontawesome-free-5.0.1\webfonts\fa-regular-400.woff" />
+    <Content Include="plugins\fontawesome-free-5.0.1\webfonts\fa-regular-400.woff2" />
+    <Content Include="plugins\fontawesome-free-5.0.1\webfonts\fa-solid-900.eot" />
+    <Content Include="plugins\fontawesome-free-5.0.1\webfonts\fa-solid-900.ttf" />
+    <Content Include="plugins\fontawesome-free-5.0.1\webfonts\fa-solid-900.woff" />
+    <Content Include="plugins\fontawesome-free-5.0.1\webfonts\fa-solid-900.woff2" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="images\author.jpg" />
+    <Content Include="images\become.jpg" />
+    <Content Include="images\blackboard.svg" />
+    <Content Include="images\books.svg" />
+    <Content Include="images\comment_1.jpg" />
+    <Content Include="images\comment_2.jpg" />
+    <Content Include="images\contact_background.jpg" />
+    <Content Include="images\courses_background.jpg" />
+    <Content Include="images\course_1.jpg" />
+    <Content Include="images\course_2.jpg" />
+    <Content Include="images\course_3.jpg" />
+    <Content Include="images\course_4.jpg" />
+    <Content Include="images\course_5.jpg" />
+    <Content Include="images\course_6.jpg" />
+    <Content Include="images\course_7.jpg" />
+    <Content Include="images\course_8.jpg" />
+    <Content Include="images\course_9.jpg" />
+    <Content Include="images\earth-globe.svg" />
+    <Content Include="images\envelope.svg" />
+    <Content Include="images\event_1.jpg" />
+    <Content Include="images\event_2.jpg" />
+    <Content Include="images\event_3.jpg" />
+    <Content Include="images\exam.svg" />
+    <Content Include="images\latest_1.jpg" />
+    <Content Include="images\latest_2.jpg" />
+    <Content Include="images\latest_3.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\milestones_background.jpg" />
+    <Content Include="images\milestone_1.svg" />
+    <Content Include="images\milestone_2.svg" />
+    <Content Include="images\milestone_3.svg" />
+    <Content Include="images\milestone_4.svg" />
+    <Content Include="images\mortarboard.svg" />
+    <Content Include="images\news_1.jpg" />
+    <Content Include="images\news_2.jpg" />
+    <Content Include="images\news_3.jpg" />
+    <Content Include="images\news_background.jpg" />
+    <Content Include="images\phone-call.svg" />
+    <Content Include="images\placeholder.svg" />
+    <Content Include="images\professor.svg" />
+    <Content Include="images\search_background.jpg" />
+    <Content Include="images\slider_background.jpg" />
+    <Content Include="images\smartphone.svg" />
+    <Content Include="images\teachers_background.jpg" />
+    <Content Include="images\teacher_1.jpg" />
+    <Content Include="images\teacher_2.jpg" />
+    <Content Include="images\teacher_3.jpg" />
+    <Content Include="images\teacher_4.jpg" />
+    <Content Include="images\teacher_5.jpg" />
+    <Content Include="images\teacher_6.jpg" />
+    <Content Include="images\testimonials_background.jpg" />
+    <Content Include="images\testimonials_background_2.jpg" />
+    <Content Include="images\testimonials_user.jpg" />
+    <Content Include="js\contact_custom.js" />
+    <Content Include="js\courses_custom.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\elements_custom.js" />
+    <Content Include="js\jquery-3.2.1.min.js" />
+    <Content Include="js\news_custom.js" />
+    <Content Include="js\news_post_custom.js" />
+    <Content Include="js\teachers_custom.js" />
     <Content Include="Login.aspx" />
+    <Content Include="plugins\easing\easing.js" />
+    <Content Include="plugins\fontawesome-free-5.0.1\css\fontawesome-all.css" />
+    <Content Include="plugins\fontawesome-free-5.0.1\webfonts\fa-brands-400.svg" />
+    <Content Include="plugins\fontawesome-free-5.0.1\webfonts\fa-regular-400.svg" />
+    <Content Include="plugins\fontawesome-free-5.0.1\webfonts\fa-solid-900.svg" />
+    <Content Include="plugins\greensock\animation.gsap.min.js" />
+    <Content Include="plugins\greensock\ScrollToPlugin.min.js" />
+    <Content Include="plugins\greensock\TimelineMax.min.js" />
+    <Content Include="plugins\greensock\TweenMax.min.js" />
+    <Content Include="plugins\OwlCarousel2-2.2.1\ajax-loader.gif" />
+    <Content Include="plugins\OwlCarousel2-2.2.1\animate.css" />
+    <Content Include="plugins\OwlCarousel2-2.2.1\owl.carousel.css" />
+    <Content Include="plugins\OwlCarousel2-2.2.1\owl.carousel.js" />
+    <Content Include="plugins\OwlCarousel2-2.2.1\owl.theme.default.css" />
+    <Content Include="plugins\OwlCarousel2-2.2.1\owl.video.play.png" />
+    <Content Include="plugins\parallax.js-2.0.0\jquery.parallax.min.js" />
+    <Content Include="plugins\progressbar\progressbar.min.js" />
+    <Content Include="plugins\scrollmagic\ScrollMagic.min.js" />
+    <Content Include="plugins\scrollTo\jquery.scrollTo.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -162,6 +256,23 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="styles\bootstrap4\bootstrap.min.css" />
+    <Content Include="styles\bootstrap4\bootstrap.min.js" />
+    <Content Include="styles\bootstrap4\popper.js" />
+    <Content Include="styles\contact_responsive.css" />
+    <Content Include="styles\contact_styles.css" />
+    <Content Include="styles\courses_responsive.css" />
+    <Content Include="styles\courses_styles.css" />
+    <Content Include="styles\elements_responsive.css" />
+    <Content Include="styles\elements_styles.css" />
+    <Content Include="styles\main_styles.css" />
+    <Content Include="styles\news_post_responsive.css" />
+    <Content Include="styles\news_post_styles.css" />
+    <Content Include="styles\news_responsive.css" />
+    <Content Include="styles\news_styles.css" />
+    <Content Include="styles\responsive.css" />
+    <Content Include="styles\teachers_responsive.css" />
+    <Content Include="styles\teachers_styles.css" />
     <Content Include="Test.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -178,12 +289,12 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="Bitacora.aspx.cs">
+      <DependentUpon>Bitacora.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="Bitacora.aspx.designer.cs">
+      <DependentUpon>Bitacora.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -201,6 +312,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

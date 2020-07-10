@@ -13,8 +13,7 @@ namespace rootAcademy
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Usuario usuarioRecibido = new BLLUsuario().GetUsuario(Request.Form.Get("username"), Request.Form.Get("password"));
-            Response.Write(usuarioRecibido.ToString());
+            Label2.Text = User.Identity.Name;
         }
     }
 }

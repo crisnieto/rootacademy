@@ -41,9 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLLBase.cs" />
+    <Compile Include="BLLBitacora.cs" />
+    <Compile Include="BLLFamilia.cs" />
+    <Compile Include="BLLRol.cs" />
     <Compile Include="BLLUsuario.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="DVVH.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Seguridad.cs" />
+    <Compile Include="Sesion.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BE\BE.csproj">

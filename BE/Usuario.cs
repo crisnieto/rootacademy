@@ -14,6 +14,8 @@ namespace BE
         string _username;
         int _intentos;
         bool _eliminado;
+        List<Rol> roles;
+
 
         public int Id { get => _id; set => _id = value; }
         public int Dvh { get => _dvh; set => _dvh = value; }
@@ -21,6 +23,7 @@ namespace BE
         public string Username { get => _username; set => _username = value; }
         public int Intentos { get => _intentos; set => _intentos = value; }
         public bool Eliminado { get => _eliminado; set => _eliminado = value; }
+        public List<Rol> Roles { get => roles; set => roles = value; }
 
         public override string ToString()
         {
