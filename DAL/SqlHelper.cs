@@ -33,10 +33,7 @@ namespace DAL
 
         public SqlConnection conseguirStringConexion()
         {
-
-            Console.WriteLine(System.AppContext.BaseDirectory);
-            string textFile = System.AppContext.BaseDirectory + "test.txt";
-            return new SqlConnection("Server= aa1trsuhl4pggv.c2i18kjo57hc.us-east-2.rds.amazonaws.com, 1433; Database = rootacademy; User Id = rootacademysuper; Password = UAI2020rootAcademy!");
+            return new SqlConnection("NOT DISPLAYING ON GITHUB");
         }
 
         private int ejecutarComando(SqlCommand comando)
