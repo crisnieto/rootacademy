@@ -19,22 +19,30 @@ namespace rootAcademy
         {
             if (User.Identity.IsAuthenticated)
             {
-                Response.Redirect("Default.aspx");
+                bool errorDeIntegridad = false;
+                string mensajeDeError = null;
+                try
+                {
+                    new DVVH().verificarIntegridad();
+                }
+                catch (Exception ex)
+                {
+                    errorDeIntegridad = true;
+                    mensajeDeError = "alert('" + ex.Message.Replace("\n", "\\n") + "');window.location ='Default.aspx';";
+                }
+                if (errorDeIntegridad && Sesion.Instancia().validar(Sesion.Instancia().conseguirUsuarioEnSesion(User.Identity), "AA099"))
+                {
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alert", mensajeDeError, true);
+                }
+                else
+                {
+                    Response.Redirect("Default.aspx");
+                }
             }
         }
 
         protected void btnIngresar_Click(object sender, EventArgs e)
         {
-            try
-            {
-                new DVVH().verificarIntegridad();
-            }
-            catch (Exception ex)
-            {
-                ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('" + ex.Message + "');", true);
-                return;
-            }
-
             try
             {
                 Usuario usuarioRecibido = new BLLUsuario().construirUsuarioRecibido(username.Text, password.Text);
@@ -43,7 +51,7 @@ namespace rootAcademy
 
                 FormsAuthentication.SetAuthCookie(usuarioLogin.Username, true);
 
-                Response.Redirect("Default.aspx");
+                Response.Redirect("Login.aspx");
             }
             catch(Exception ex)
             {

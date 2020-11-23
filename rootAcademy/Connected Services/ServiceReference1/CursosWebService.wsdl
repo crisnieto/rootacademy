@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="conseguirCursosActuales">
+        <s:complexType />
+      </s:element>
+      <s:element name="conseguirCursosActualesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="conseguirCursosActualesResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarCurso">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarCursoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="buscarCursoResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="conseguirCursosActualesSoapIn">
+    <wsdl:part name="parameters" element="tns:conseguirCursosActuales" />
+  </wsdl:message>
+  <wsdl:message name="conseguirCursosActualesSoapOut">
+    <wsdl:part name="parameters" element="tns:conseguirCursosActualesResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscarCursoSoapIn">
+    <wsdl:part name="parameters" element="tns:buscarCurso" />
+  </wsdl:message>
+  <wsdl:message name="buscarCursoSoapOut">
+    <wsdl:part name="parameters" element="tns:buscarCursoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CursosWebServiceSoap">
+    <wsdl:operation name="conseguirCursosActuales">
+      <wsdl:input message="tns:conseguirCursosActualesSoapIn" />
+      <wsdl:output message="tns:conseguirCursosActualesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarCurso">
+      <wsdl:input message="tns:buscarCursoSoapIn" />
+      <wsdl:output message="tns:buscarCursoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CursosWebServiceSoap" type="tns:CursosWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="conseguirCursosActuales">
+      <soap:operation soapAction="http://tempuri.org/conseguirCursosActuales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarCurso">
+      <soap:operation soapAction="http://tempuri.org/buscarCurso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CursosWebServiceSoap12" type="tns:CursosWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="conseguirCursosActuales">
+      <soap12:operation soapAction="http://tempuri.org/conseguirCursosActuales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarCurso">
+      <soap12:operation soapAction="http://tempuri.org/buscarCurso" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CursosWebService">
+    <wsdl:port name="CursosWebServiceSoap" binding="tns:CursosWebServiceSoap">
+      <soap:address location="http://localhost:57739/CursosWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CursosWebServiceSoap12" binding="tns:CursosWebServiceSoap12">
+      <soap12:address location="http://localhost:57739/CursosWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

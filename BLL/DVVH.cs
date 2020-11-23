@@ -26,6 +26,7 @@ namespace BLL
         {
             //Primero debo obtener todas las tablas que tienen DVH y DVV
             DAL.DVVH dalDVVH = new DAL.DVVH();
+            List<string> listaErrores = new List<string>();
             foreach (string tabla in listaTablasIntegridad)
             {
                 List<int> listaDeDVH = dalDVVH.obtenerListaDVHdeTabla(tabla);
@@ -40,7 +41,8 @@ namespace BLL
                 {
                     Console.WriteLine(usuario.Username);
                     new BLLBitacora().crearNuevaBitacora("Calculo de DVVH", "Se detecto un error de calculo de DVH para la entidad Usuario con ID: " + usuario.Id, Criticidad.Alta);
-                    lanzarErrorDeVerificacion();
+                    agregarMensajeError(listaErrores, usuario.Id, usuario.GetType().Name);
+                    //lanzarErrorDeVerificacion();
                 }
             }
             BLLPersona bllPersona = new BLLPersona();
@@ -51,8 +53,14 @@ namespace BLL
                 {
                     Console.WriteLine(persona.Nombre);
                     new BLLBitacora().crearNuevaBitacora("Calculo de DVVH", "Se detecto un error de calculo de DVH para la entidad Persona con ID: " + persona.Id, Criticidad.Alta);
-                    lanzarErrorDeVerificacion();
+                    agregarMensajeError(listaErrores, persona.Id, persona.GetType().Name);
+                    //lanzarErrorDeVerificacion();
                 }
+            }
+
+            if (listaErrores.Count > 0)
+            {
+                lanzarErrorDeVerificacionDVH(listaErrores);
             }
 
             return true;
@@ -103,6 +111,11 @@ namespace BLL
             }
         }
 
+        public void agregarMensajeError(List<string> errores, int id, string tabla)
+        {
+            errores.Add("Registro ID: " + id + " - Tabla: " + tabla);
+        }
+
 
         /// <summary>
         /// lanzarErrorDeVerificacion es responsable de hacer un throw de una excepcion y es llamado cuando existe un error de integridad
@@ -110,6 +123,11 @@ namespace BLL
         public void lanzarErrorDeVerificacion()
         {
             throw new Exception(RootAcademyMessage.formatearMensaje("Existe un error de integridad. Por favor verificar la base de datos."));
+        }
+
+        public void lanzarErrorDeVerificacionDVH(List<string> lista)
+        {
+            throw new Exception(RootAcademyMessage.formatearMensaje("Existe un error de integridad. Por favor verificar la base de datos \n " + String.Join("\n", lista.ToArray())));
         }
     }
 }

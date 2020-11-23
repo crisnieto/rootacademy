@@ -33,5 +33,18 @@ namespace rootAcademy
 
    
         }
+        protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            try
+            {
+                GridView1.PageIndex = e.NewPageIndex;
+                GridView1.DataBind();
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
     }
 }

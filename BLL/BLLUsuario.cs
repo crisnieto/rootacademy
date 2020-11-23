@@ -140,6 +140,5 @@ namespace BLL
             usuario.Password = password;
             return usuario;
         }
-
     }
 }

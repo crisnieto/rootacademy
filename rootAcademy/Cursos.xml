@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Cursos>
+  <Curso>
+    <Nombre>Aprendiendo ASP.NET</Nombre>
+    <Tiempo>20 horas</Tiempo>
+    <Nivel>Medio</Nivel>
+    <Profesor>
+      <Nombre>Tanmay</Nombre>
+      <Apellido>Patil</Apellido>
+      <Email>tanmaypatil@xyz.com</Email>
+    </Profesor>
+    <Precio>
+      <Monto>8000</Monto>
+      <Moneda>AR$</Moneda>
+    </Precio>
+  </Curso>
+  <Curso>
+    <Nombre>Introduccion a SQL</Nombre>
+    <Tiempo>8 horas</Tiempo>
+    <Nivel>Basico</Nivel>
+    <Profesor>
+      <Nombre>Carlos</Nombre>
+      <Apellido>Fuente</Apellido>
+      <Email>carlosfuentes@rootacademy.com</Email>
+    </Profesor>
+    <Precio>
+      <Monto>3000</Monto>
+      <Moneda>AR$</Moneda>
+    </Precio>
+  </Curso>
+  <Curso>
+    <Nombre>Creando APIs con Java y Spring</Nombre>
+    <Tiempo>40</Tiempo>
+    <Nivel>Avanzado</Nivel>
+    <Profesor>
+      <Nombre>Eduardo</Nombre>
+      <Apellido>Lopez</Apellido>
+      <Email>eduardolopez@rootacademy.com</Email>
+    </Profesor>
+    <Precio>
+      <Monto>18000</Monto>
+      <Moneda>AR$</Moneda>
+    </Precio>
+  </Curso>
+  <Curso>
+    <Nombre>Crea tu aplicacion de iOS con Swift</Nombre>
+    <Tiempo>25 horas</Tiempo>
+    <Nivel>Medio</Nivel>
+    <Profesor>
+      <Nombre>Andrea</Nombre>
+      <Apellido>Garcia</Apellido>
+      <Email>andreagarcia@rootacademy.com</Email>
+    </Profesor>
+    <Precio>
+      <Monto>10000</Monto>
+      <Moneda>AR$</Moneda>
+    </Precio>
+  </Curso>
+  <Curso>
+    <Nombre>Desarrollador Front-End con React JS</Nombre>
+    <Tiempo>30 horas</Tiempo>
+    <Nivel>Avanzado</Nivel>
+    <Profesor>
+      <Nombre>Carolina</Nombre>
+      <Apellido>Tapia</Apellido>
+      <Email>carolinatapia@rootacademy.com</Email>
+    </Profesor>
+    <Precio>
+      <Monto>15000</Monto>
+      <Moneda>AR$</Moneda>
+    </Precio>
+  </Curso>
+  <Curso>
+    <Nombre>Introduccion a Ruby on Rails</Nombre>
+    <Tiempo>9 horas</Tiempo>
+    <Nivel>Basico</Nivel>
+    <Profesor>
+      <Nombre>Bautista</Nombre>
+      <Apellido>Rodriguez</Apellido>
+      <Email>bautistarodriguez@rootacademy.com</Email>
+    </Profesor>
+    <Precio>
+      <Monto>5000</Monto>
+      <Moneda>AR$</Moneda>
+    </Precio>
+  </Curso>
+  <Curso>
+    <Nombre>Crea tu aplicacion de Android con Kotlin</Nombre>
+    <Tiempo>26 horas</Tiempo>
+    <Nivel>Medio</Nivel>
+    <Profesor>
+      <Nombre>Agustin</Nombre>
+      <Apellido>Cardozo</Apellido>
+      <Email>agustincardozo@rootacademy.com</Email>
+    </Profesor>
+    <Precio>
+      <Monto>12000</Monto>
+      <Moneda>AR$</Moneda>
+    </Precio>
+  </Curso>
+  <Curso>
+    <Nombre>Introduccion a Golang</Nombre>
+    <Tiempo>11 horas</Tiempo>
+    <Nivel>Medio</Nivel>
+    <Profesor>
+      <Nombre>Tamara</Nombre>
+      <Apellido>Godoy</Apellido>
+      <Email>tamaragodoy@rootacademy.com</Email>
+    </Profesor>
+    <Precio>
+      <Monto>9000</Monto>
+      <Moneda>AR$</Moneda>
+    </Precio>
+  </Curso>
+</Cursos>

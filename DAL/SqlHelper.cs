@@ -33,7 +33,8 @@ namespace DAL
 
         public SqlConnection conseguirStringConexion()
         {
-            return new SqlConnection("NOT DISPLAYING ON GITHUB");
+            //return new SqlConnection("Server= aa1trsuhl4pggv.c2i18kjo57hc.us-east-2.rds.amazonaws.com, 1433; Database = rootacademy; User Id = rootacademysuper; Password = UAI2020rootAcademy!");
+            return new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=rootacademy;Integrated Security=True");
         }
 
         private int ejecutarComando(SqlCommand comando)
