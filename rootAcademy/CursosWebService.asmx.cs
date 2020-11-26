@@ -39,7 +39,7 @@ namespace rootAcademy
             
             //Filtrar por Nombre (Busqueda con case-insensitive)
 
-            XmlNodeList nodes = cursos.SelectNodes("/Cursos/Curso[Nombre[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), '" + nombre + "')]]");
+            XmlNodeList nodes = cursos.SelectNodes("/Cursos/Curso[Nombre[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), '" + nombre.ToLower() + "')]]");
 
             // Crear documento para filtrar y cargar nodos filtrados.
 

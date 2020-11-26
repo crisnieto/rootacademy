@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using DAL;
 using BE;
 using System.IO;
+using System.Security.Principal;
 
 namespace BLL
 {
@@ -16,8 +17,20 @@ namespace BLL
         /// </summary>
         /// <param name="path"></param>
         /// <returns></returns>
+        /// 
+
+        public BLLBackupManager()
+        {
+        }
+
+        public BLLBackupManager(IIdentity user)
+        {
+            Sesion.Instancia().verificarPermiso(user , "OP45");
+        }
+
         public int crearBackup(string path)
         {
+
             try
             {
                 DALBackupManager dalBackupManager = new DALBackupManager();
